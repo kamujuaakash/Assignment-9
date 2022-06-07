@@ -1,0 +1,61 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+% \usetheme{Frankfurt}
+% \usetheme{Darmstadt}
+% \usetheme{Berlin}
+% \usetheme{Warsaw}
+% \usetheme{Berkeley}
+% \usetheme{Bergen}
+% \usetheme{CambridgeUS}
+% \usetheme{Copenhagen}
+
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\newcommand{\mysolution}{\noindent \textbf{Solution: }}
+
+\title{AI1110 - Probability and Random Variables\\
+        Assignment 9}
+\author{Aakash Kamuju (ai21btech11001)}
+\begin{document}
+\maketitle
+    % \begin{frame}{Table of Contents}
+    % \tableofcontents
+    % \end{frame}
+    \begin{frame}{Outline}
+    \tableofcontents
+    \end{frame}
+    \begin{frame}{Question}
+        \begin{section}{Question}
+            \begin{block}{EXAMPLE 8-29}
+             A coin is tossed 64 times, and heads shows 22 times.\\ (a) Test the hypothesis that the coin
+is fair with significance level 0.05. (b) We toss a coin 16 times, and heads shows k times. If
+k is such that $k_1 \le k \le k_2$ , we accept the hypothesis that the coin is fair with significance
+level $\alpha$ = 0.05. Find $k_1$ and $k_2$ and the resulting $\beta$ error. 
+   \end{block}
+    \end{section}
+    \end{frame}
+    \begin{frame}{Solution}
+        \begin{section}{Solution}
+            \begin{block}{Solution}
+            (a) In this problem, n = 64 , k= 22 , $p_0 = q_0 = 0.5$\\
+            $$q = \frac{k - np_0}{\sqrt{n p_0 q_0}} = 2.5$$
+    $$z_{\alpha/2} = z_{1-\alpha/2} \simeq -2$$
+    Since 2.5 is outside the interval (2 , -2), we reject fair coin hypothesis
+        \end{block}
+       \end{section}
+  \end{frame}
+  \begin{frame}
+        \begin{section}{Solution Continued}
+            \begin{block}{Solution Continued}
+            (b) We know that here,\\
+             n = 16, $p_0 = q_0 = 0.5$\\
+             $$\frac{k_1 - np_0}{\sqrt{n p_0 q_0}} = z_{\alpha/2}$$
+             $$\frac{k_2 - np_0}{\sqrt{n p_0 q_0}} = -z_{\alpha/2}$$
+             This yields $k_1 = 8 -(2 \times 2)$, $k_2 = 8 + (2 \times 2)$
+              $k_1 = 4$ and $k_2 = 12$
+                     
+
+        \end{block}
+       \end{section}
+  \end{frame}
+   \end{document}
